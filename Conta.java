@@ -3,10 +3,10 @@
  */
 public class Conta {
 
-    double saldo;
+    double saldo = 100;
     int agencia;
     int numero_conta;
-    String titular;
+    Cliente titular = new Cliente();
 
     public void deposita(double valor) {
         this.saldo += valor;
