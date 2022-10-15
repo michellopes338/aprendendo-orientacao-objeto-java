@@ -6,8 +6,8 @@
 public class CriaConta {
 
     public static void main(String[] args) {
-        Conta minhaConta = new Conta();
-        Conta outraConta = new Conta();
+        Conta minhaConta = new Conta(1337, 8082);
+        Conta outraConta = new Conta(1337, 8083);
         Cliente michel = new Cliente();
 
         minhaConta.deposita(200);
@@ -19,5 +19,6 @@ public class CriaConta {
         minhaConta.setNumero(1337);
         System.out.println(minhaConta.getNumero());
         minhaConta.setTitular(michel);
+        System.out.println(Conta.getTotalDeContas());
     }
 }
