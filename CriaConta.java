@@ -15,9 +15,9 @@ public class CriaConta {
         minhaConta.transfere(100, outraConta);
 
         michel.nome = "Michel Lopes Cruz";
-        minhaConta.titular = michel;
-
-        System.out.println(minhaConta.saldo);
-        System.out.println(outraConta.saldo);
+        System.out.println(minhaConta.getNumero());
+        minhaConta.setNumero(1337);
+        System.out.println(minhaConta.getNumero());
+        minhaConta.setTitular(michel);
     }
 }
